@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Jurimar's Code Reviewer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Merriweather&display=swap" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
@@ -18,15 +18,15 @@
                     <h2>Signup for our newsletter</h2>
                     <h3>Get the latest news on how your code is doing right in your inbox</h3>
                     <form action="index.html" method="post">
-                        <fieldset class="line wrap">
+                        <fieldset class="line">
                             <h2>Contact Information</h2>
                             <div class="item">
                                 <label for="name">Name</label>
-                                <input class="grow" type="text" name="user_name" id="name" placeholder="Required">
+                                <input class="grow" type="text" name="user_name" id="name" placeholder="Required" required>
                             </div>
                             <div class="item">
                                 <label for="email">Email Address</label>
-                                <input class="grow" type="email" name="user_email" id="email" placeholder="Required">
+                                <input class="grow" type="email" name="user_email" id="email" placeholder="Required" required>
                             </div>
                             <div class="item">
                                 <label for="phone_nom">Phone Number</label>
@@ -84,7 +84,7 @@
                             <div class="area">
                                 <label for="topics">Other topics you'd like to hear about</label>
                                 <textarea name="other_topics" id="topics" rows="8" cols="20"></textarea>
-                            <div></div>
+                            </div>
                         </fieldset>
                         <button class="btn" type="submit">Sign Up</button>
                     </form>
