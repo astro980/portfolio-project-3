@@ -144,7 +144,7 @@ Container Styles and Layouts
 }
 /* Form Styles and layouts */
 .form-container {
-    width: 30%;
+    width: 65%;
     margin: 0 auto;
     text-align: center;
 }
@@ -189,7 +189,7 @@ form {
         align-items: flex-start;
     }
     .zip_code {
-        margin-right: 16%;
+        margin-right: 23.8%;
     }
     .item input,
     .zip_code {
