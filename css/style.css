@@ -33,6 +33,7 @@ input[type="tel"],
 input[type="time"],
 input[type="url"],
 textarea,
+option,
 select {
   background: rgba(255,255,255,0.1);
   font-size: 16px;
@@ -45,6 +46,7 @@ select {
   color: #8a97a0;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 30px;
+  transition: .5s all;
 }
 input[type="checkbox"]:checked + label,
 input[type="radio"]:checked + label {
@@ -56,13 +58,15 @@ textarea {
     resize: none;
 }
 input,
+select,
 textarea {
     outline: 0;
     border: none;
     border-radius: .3em;
-    border-bottom: 3px solid rgba(0,0,0,0.05)
+    border-bottom: 4px solid rgba(0,0,0,0.05);
 }
 input:focus,
+select:focus,
 textarea:focus {
     border-color: #52ba86;
 }
@@ -80,7 +84,7 @@ input[type="checkbox"] {
 }
 select {
   padding: 6px;
-  height: 32px;
+  height: 20%;
   border-radius: 2px;
 }
 button {
@@ -99,22 +103,25 @@ button {
   cursor: pointer;
 }
 .btn {
+    width: 50%;
     margin: 15px 0;
+    margin-left: 25%;
+    justify-content: center;
 }
 legend {
   font-size: 1.4em;
-  margin-bottom: 10px;
 }
 label {
     display: block;
     margin-bottom: 8px;
+    transition: 1s all;
   }  
 label.light {
 font-weight: 300;
 display: inline;
 }
 .zip_code {
-    padding-top: 15px;
+    padding: 15px 10px 0;
 }
 #zip_code {
     width: 50%;
@@ -144,7 +151,7 @@ Container Styles and Layouts
 }
 /* Form Styles and layouts */
 .form-container {
-    width: 65%;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
 }
@@ -169,12 +176,17 @@ form {
     border-top: 3px solid #d2bab3;
     border-bottom: 5px solid #d2bab3;
 }
-.line h2 {
-    text-align: center;
-    margin-bottom: 5%;
+.move {
+    display: flex;
+    justify-content: center;
+    margin: 5% auto;
 }
 
-@media (min-width: 769px) {    
+
+@media (min-width: 768px) {    
+    .form-container {
+        max-width: 768px;
+    }
     .item {
         display: flex;
         flex-flow: row;
